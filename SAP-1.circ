@@ -59,7 +59,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(360,670)" to="(420,670)"/>
     <wire from="(570,570)" to="(570,580)"/>
     <wire from="(260,850)" to="(510,850)"/>
     <wire from="(530,610)" to="(580,610)"/>
@@ -80,6 +79,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(500,110)" to="(540,110)"/>
     <wire from="(160,420)" to="(190,420)"/>
     <wire from="(240,420)" to="(270,420)"/>
+    <wire from="(400,670)" to="(420,670)"/>
     <wire from="(250,710)" to="(250,880)"/>
     <wire from="(500,580)" to="(500,620)"/>
     <wire from="(10,230)" to="(280,230)"/>
@@ -244,8 +244,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(320,540)" to="(320,590)"/>
     <wire from="(570,230)" to="(570,280)"/>
     <wire from="(570,590)" to="(580,590)"/>
-    <wire from="(430,680)" to="(430,800)"/>
     <wire from="(310,240)" to="(380,240)"/>
+    <wire from="(430,680)" to="(430,800)"/>
     <wire from="(40,250)" to="(40,640)"/>
     <wire from="(560,220)" to="(560,290)"/>
     <wire from="(560,620)" to="(560,710)"/>
@@ -262,6 +262,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(270,730)" to="(270,840)"/>
     <wire from="(310,540)" to="(320,540)"/>
     <wire from="(350,340)" to="(360,340)"/>
+    <wire from="(360,670)" to="(370,670)"/>
     <wire from="(790,690)" to="(790,810)"/>
     <wire from="(500,530)" to="(500,580)"/>
     <wire from="(-10,620)" to="(0,620)"/>
@@ -437,6 +438,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit6" val="1"/>
       <a name="bit7" val="1"/>
     </comp>
+    <comp lib="1" loc="(400,670)" name="NOT Gate"/>
     <comp loc="(650,80)" name="Accumulator">
       <a name="label" val="Reg_ACC"/>
       <a name="labelloc" val="east"/>
