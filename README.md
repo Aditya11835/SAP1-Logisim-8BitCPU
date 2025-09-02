@@ -21,11 +21,34 @@ The **SAP-1 (Simple-As-Possible 1)** is a basic computer architecture model intr
 - How the **fetch-decode-execute cycle** works.  
 - The role of **control signals** in orchestrating operations.  
 - Basics of **binary instruction encoding**.  
-- How a **minimal instruction set** can still perform useful computation.  
+- How a **minimal instruction set** can still perform useful computation.
+
+#### This project replicates the **SAP-1 CPU in Logisim**, providing a hands-on way to visualize how each instruction moves through the CPU components.
 
 ---
 
-## 3. Components of SAP-1 (in detail)
+## 3. Getting Started
+
+### Clone the Repository
+    git clone https://github.com/Aditya11835/SimplestArchitecturePossible1-8BitCPU-Logisim.git
+    cd SimplestArchitecturePossible1-8BitCPU-Logisim
+
+### Download Logisim
+- Classic Logisim: http://www.cburch.com/logisim/
+
+Logisim is a digital logic simulator required to run this project.
+
+### Open the Project in Logisim
+1. Open Logisim.
+2. Go to File → Open.
+3. Select the `.circ` file from the cloned repo.
+4. Run the simulation with the clock button or manual tick.
+
+You should now see the SAP-1 CPU ready to be programmed and run by executing instructions from programmable RAM memory.
+
+---
+
+## 4. Components of SAP-1 (in detail)
 The SAP-1 architecture contains a minimal set of components needed to demonstrate CPU functionality:
 
 ### Program Counter (PC)
@@ -63,7 +86,7 @@ The SAP-1 architecture contains a minimal set of components needed to demonstrat
 
 ---
 
-## 4. Instruction Set of SAP-1
+## 5. Instruction Set of SAP-1
 The SAP-1 instruction set is deliberately **small and simple**.  
 Each instruction is **8 bits**:  
 - The first 4 bits = **opcode** (operation).  
@@ -78,10 +101,9 @@ Each instruction is **8 bits**:
 | **SUB addr** | 0011 AAAA    | 0x3A | `SUB 0xA`       | Subtract value from memory from Accumulator |
 | **OUT**      | 0111 XXXX    | 0x7X | `OUT`           | Send Accumulator content to Output Register |
 | **HLT**      | 1111 XXXX    | 0xFX | `HLT`           | Halt program execution |
-
 ---
 
-## 5. Scope for Scalability
+## 6. Scope for Scalability
 While SAP-1 is intentionally minimal, it can be extended step by step into a more capable CPU. Some possible enhancements include:
 
 - **Expanded Instruction Set**  
@@ -100,16 +122,8 @@ While SAP-1 is intentionally minimal, it can be extended step by step into a mor
   Along with `OUT`, add an `IN` instruction to accept input from a simulated device or keyboard.  
 
 - **Multiple Registers**  
-  Introduce general-purpose registers (R0, R1, etc.) for faster computation and flexibility.  
-
-- **Interrupt Handling**  
-  Add basic interrupt support to demonstrate how CPUs handle external signals.  
-
-- **Pipelining / Microprogramming**  
-  Step toward modern CPU design concepts by experimenting with parallel execution and microcode control.  
+  Introduce general-purpose registers (R0, R1, etc.) for faster computation and flexibility.   
 
 These extensions transform SAP-1 into **SAP-2 and beyond**, bridging the gap between an educational toy CPU and the architecture of real-world processors.
 
 ---
-
-This project replicates the **SAP-1 CPU in Logisim**, providing a hands-on way to visualize how each instruction moves through the CPU components.
